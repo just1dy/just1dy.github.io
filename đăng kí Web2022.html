@@ -1,0 +1,123 @@
+<html>
+    <head>
+<style>
+    body{
+    margin: auto;
+width: 400px;
+height: 500px;
+background-color: #a6a6bd;
+}
+* {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+.form-group{
+			border-radius: 100px;
+			padding-right: 90px;
+			padding-bottom: 10px;
+			padding-top: 10px;
+			padding-left: 30px;
+			border: 1px solid red;
+			box-shadow: 0 3px 9px rgba(0, 0, 0, 0.3); 
+
+		}
+        .dil{text-align: center;}
+		.form-control{
+			border-radius: 0px;
+			padding: 10px;
+			border: 1px solid gray;
+			box-shadow: 0 3px 9px rgba(0, 0, 0, 0.3); 
+
+		}
+		.btn{
+			padding-bottom: 10px;
+			padding-top: 10px;
+			padding-right: 18px;
+			padding-left: 18px;
+			text-transform: uppercase;
+			border: 0px;
+			border-radius: 3px;
+			box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); 
+		}
+		.btn-info{
+			color: white;
+			background-color: gray;
+		}
+		.btn-danger{
+			color: white;
+			background-color: gray;
+		}
+		.btn-success{
+			color: white;
+			background-color: gray;
+		}
+		.file{
+			padding-bottom: 10px;
+			padding-top: 10px;
+			padding-right: 18px;
+			padding-left: 18px;
+			text-transform: uppercase;
+			border: 0px;
+			border-radius: 3px;
+			box-shadow: 0 8px 15px rgba(0, 0, 0, 0.3); 
+			z-index: 1000;}
+</style>
+    </head>
+    <body>
+        <div class="dil">
+
+        <h1>Đăng kí</h1>
+<form action="" method="post" style="border-radius: 10px;border: 5px solid gray;">
+    <p>
+    <label for="">Họ và tên</label><br>
+    <input type="text" placeholder="Nhập họ và tên" class="form-control" required=""><br>
+    <label for="">email</label><br>
+    <input type="text" placeholder="nhập email" class="form-control" required=""><br>
+    <label for="">tên đăng nhập</label><br>
+    <input type="text" placeholder="nhập email" class="form-control" required=""><br>
+    <label for="">mật khẩu</label><br>
+    <input type="text" placeholder="nhập mật khẩu" class="form-control" required=""><br>
+
+
+
+
+    </p>
+    <p>
+    <label for="">Giới tính:</label>
+    <input id="1" name="1" type="radio">Nam
+    <input id="2" name="1" type="radio">Nữ <br>
+    </p>
+    <p>
+    <label for="">Hình ảnh</label><br>
+    <input type="file" required="" class="btn btn-danger">
+    </p>
+    <p>
+    <label for="">Quốc tịch</label><br>
+    <select name="" id="" class="form-group"><br>
+        <option value="">...</option>
+        <option value="">Trung Quốc</option>
+        <option value="">Mỹ</option>
+        <option value="">Anh</option>
+        <option value="">Balan</option>
+    </select>
+</p>
+<p>
+    <label for="">đã từng tạo tk ở đây!</label><br>
+    <input type="checkbox">Có
+    <input type="checkbox">Chưa
+    
+     <br>
+    </p>
+    <p>
+    <label for="">Ghi chú</label><br>
+    <textarea name="" id=""rows="5" class="form-control" placeholder="Nhập ghi chú"></textarea><hr>
+    <input type="submit" value="Đăng kí" class="btn btn-info">
+    <button class="btn btn-success">Đăng nhập</button>
+    <input type="reset" value="Reset" class="btn btn-danger">
+</p>
+</form>
+        </div>
+    </body>
+
+
+</html>

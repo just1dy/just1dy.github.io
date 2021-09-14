@@ -1,0 +1,324 @@
+<!DOCTYPE html>
+<meta charset="UTf-8">
+
+<html>
+    
+    <head><meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;1,400;1,700&family=Mate:ital@0;1&display=swap');
+            
+
+body{background-color: rgb(228, 217, 204);
+    font-family: 'Crimson Text', serif;
+    min-width: 1000px;
+    height: auto
+    ; flex-wrap: wrap;
+                display: flex;
+                
+}
+img {vertical-align: middle; }
+            .container{
+                min-width: 960px;
+                width: 100%;
+                flex-wrap: wrap;
+                display: flex;
+                height: auto;
+                background-color: #515a83;}
+
+
+
+
+
+.header{background-color: antiquewhite;           
+     margin-top: -1em;
+     min-width: 1000px;
+     width: 100%;
+     height: 50px;}
+
+    .header ul li:hover{
+    border-bottom: 2px solid #333;}
+
+    .header ul li a{
+     text-decoration: none;
+     color:rgb(104, 87, 87);
+     font-size:30px;
+     display: block;
+     
+     line-height:50px;  }
+
+     .header ul li{/*  khung không gian trong cái header*/
+     display: inline-block;/*  inline block cho nó ko tuột hàng*/}
+     
+.item {
+font-family: 'Mate', serif;
+  padding: 1rem;
+  text-align: center;
+  color: rgb(58, 50, 50);
+}
+footer{
+
+margin: auto;
+width: 100%;
+background-color: #515a83;
+min-height: 300px;
+}
+.textfoot{padding: auto;
+  background-color: #515a83;
+  color: rgb(201, 183, 183);
+  width: 41%;
+  text-align: center;
+  height: 190px;
+  float: right;
+  margin-right: 30%;
+
+}
+.imgfoot{
+  flex-wrap: nowrap;
+  margin-left: 2em;
+  width: 15%;
+ min-height: 150px;
+  background-color: #515a83;}
+
+.item1 { background-color: #ffffff; 
+
+border: 1px solid black;   ;
+box-shadow: 0px 0px 40px #888888;}
+.item2 { background-color:rgb(224, 214, 192);
+border: 1px solid   ;
+box-shadow: 0px 0px 40px #888888;}
+.item4 { background-color:rgb(220, 230, 213);
+border: 1px solid   ;
+box-shadow: 0px 0px 40px #888888;
+}
+.bao1
+
+{background-color: rgb(85, 105, 122);
+margin-left:30%;
+list-style-type: circle ;
+display: grid;
+width: 60%;
+height: 50%;
+grid-template-columns: 50% 50%;
+grid-template-rows: 100% 100% ;}
+.tittle1{
+    margin-top:10%;
+    float: right;
+
+    margin-right: 10%;
+}
+.tittle2{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin-top:20%;
+    float: right;
+
+    margin-right: 10%;
+}
+.part1{opacity: 1;
+
+line-height: 5em;
+    height: auto !important;
+    width: 100%;
+    background-color: #ffffff; 
+text-align: center;
+}
+.feedback{
+  display: flex;
+  flex-wrap: wrap;
+  text-align: left;
+  width: 100%;
+  min-height: 600px;
+  background-color: #515a83;
+}
+.bao2{
+margin-top: -1em;
+background-color: rgb(20, 105, 179);
+margin-left:10%;
+display: grid;
+width: 70%;
+height: 30%;
+grid-template-columns: auto auto;
+grid-template-rows: 100% 100% ;}
+
+@keyframes left-right {
+    0% { width: 0; }
+    50% { width: 100%; left: 0;}
+    100% { width:0; left:100%;}
+}
+.part1.hr {
+        border: 0;
+        border-top: 3px solid color;
+        width: 0;
+        position: absolute;
+        top: 82%;
+        left: 0; 
+        margin: 0;
+        transition: width 0.5s ease-out;
+        -webkit-transition: width 0.5s ease-out;
+      }
+
+      :first-child:hover hr {
+        width: 100%;
+      }
+      :nth-child(2):hover hr {
+        animation: left-right 2s ease-in infinite;
+        -webkit-animation: left-right 2s ease-in infinite;
+      }
+      :nth-child(3):hover hr {
+        width:50%;
+        animation: bounce 1.5s 0.5s ease-out infinite;
+        -webkit-animation: bounce 1.5s 0.5s ease-out infinite;
+      }
+      :nth-child(4) hr {
+        left: 50%;
+      }
+      :nth-child(4):hover hr {
+        animation: double 2s .5s ease-out infinite;
+        -webkit-animation: double 2s .5s ease-out infinite;
+      }
+      :last-child hr {
+        right: 0;
+      }
+      :last-child:hover hr {
+        animation: slide .7s ease-out infinite;
+        -webkit-animation: slide .7s ease-out infinite;
+   
+}
+
+@keyframes left-right {
+    0% { width: 0; }
+    50% { width: 100%; left: 0;}
+    100% { width:0; left:100%;}
+}
+@keyframes bounce {
+    0% { left:0; }
+    48% {left: 50%;}
+    50% {left:50%;}
+    98% { left:0;}
+    100%{left:0;}
+}
+@keyframes double {
+    0% { width: 0; }
+    40% { width: 100%; left: 0;right:0;}
+    80% { width:0; left:50%;}
+    100% {width:0;}
+}
+@keyframes slide {
+    0% { width:0;}
+    30% { width: 50%; right: 0; }
+    60% { width: 50%; right: 50%;}
+    90% { width: 0; right:100%; }
+    100% { width: 0;}
+}
+.part2
+{
+    width: 70%;
+    margin-left: 0.7em;
+    margin-top: 5em;
+    height: 60%;
+}
+figure{
+    width: 100%;
+    height: 100%;
+    background-color: aqua;
+}
+
+  figure img{margin:auto;
+  
+    
+    width: 100%;
+    height: 100%;
+}
+.part3{line-height: 1em;
+    width: 100%;
+    text-align: justify;
+    height: auto;
+}
+.part4{
+    width: 80%;
+    margin-top: 2em;
+margin-right: 7em;  
+  height: 80%;
+}
+.part1 :hover{
+    opacity:4;
+    text-decoration: underline;
+}
+.logo{
+    height: 60px;
+    width: 150px;}
+
+        </style>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <section class="header">
+                
+                    <ul>
+                        <img  src="images/iconm1.png"  width="150px" height="50px"alt="" srcset=""></a>
+                        <li><a href="index.html">  ABOUT US   </a></li>&emsp;&emsp;&emsp;&emsp;&emsp;
+                        <li><a href="index.html">  Best Seller  </a></li>&emsp;&emsp;&emsp;&emsp;&emsp;
+                        <li><a href="index.html">  Caterogy  </a></li>&emsp;&emsp;&emsp;&emsp;&emsp;
+                        <li><a href="index.html">  ABOUT US   </a></li>&emsp;&emsp;&emsp;&emsp;&emsp;
+                        <li><a href="index.html">  ABOUT US   </a></li>&emsp;&emsp;&emsp;&emsp;&emsp;
+                        <li><a href="index.html">  ABOUT US   </a></li>&emsp;&emsp;&emsp;&emsp;&emsp;
+                        <li><a href="index.html">  Caterogy  </a></li>&emsp;&emsp;&emsp;&emsp;&emsp;
+
+
+                    </ul>
+
+            </section><br>
+            </header>
+            <section class="bao1"> 
+<div class=" item item1">
+    <div class="tittle1">
+      <P >OVERVIEW</P><hr>
+    </div>
+<div class="part1">
+<p> Full Name: Nguyen Thanh Duy</p>
+   <p>LiVing: Binh Duong City </p> 
+   <p>Born: Vinh Long City </p>
+   <p> Work as: Web designer</p> 
+   <p>Work at: Collage FPT Polytechnich</p> 
+   <p>Birthday:9/6/2000 </p> 
+   <p>Hobbies: Books - Sleep - Gamble - Somethings eles</p> 
+   <p>Girl friend: Not yet </p> 
+
+</p>
+</div>
+</div>
+
+<div class=" item item2">
+    <div class="part2">
+        <figure>
+            <img src="images/duy1.jpg" alt="" srcset="">
+        </figure>
+
+    </div>
+</div>
+            </section>
+            <section class="bao2">
+                <div class=" item item1">
+                        Quote<hr>
+                    <div class="part3">
+                        <p> "I am the Best one - you are no thing to me 
+                            There are a lot of great free fonts around, but one kind is missing:
+                             those Garamond-inspired types with all the little niceties like oldstyle figures, small caps, fleurons, math characters
+                              and the like. In fact, a lot of time is spend developing free knock-offs of ugly "standards"like Times and Helvetica."</p>
+                    </div>
+                </div>
+<div class=" item item4">
+     <div class="part4">
+         <figure>
+             <img src="images/duy2.jpg" alt="" srcset="">
+         </figure>
+    <p> 
+</div> 
+  </div>
+            </section>
+
+          
+        </div>
+    </body>
+</html>
